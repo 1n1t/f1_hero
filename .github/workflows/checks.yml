@@ -21,12 +21,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 8
-          cache: 'yarn'
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
-        with:
-          useRollingCache: true
 
       - name: Run ESLint
         run: yarn lint
@@ -46,12 +43,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 8
-          cache: 'yarn'
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
-        with:
-          useRollingCache: true
 
       - name: Run Jest
         run: yarn test
