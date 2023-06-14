@@ -10,7 +10,8 @@
 		"server": "nodemon server.js",
 		"client": "node startClient.js",
 		"dev": "concurrently \"yarn server\" \"yarn client\"",
-		"test": "PORT=3002 jest --coverage --runInBand",
+		"test":
+			"PORT=3002 jest --coverage --runInBand _client/src/services/utils/functions.spec.jsx",
 		"test:watch": "PORT=3002 jest --watch --verbose",
 		"lint": "eslint . --ext .js,.jsx --quiet",
 		"format": "prettier --write '**/*.{js,jsx}'",
