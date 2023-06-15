@@ -22,6 +22,11 @@ jobs:
         with:
           node-version: 8
           cache: 'yarn'
+      
+      - run: yarn -v
+
+      # make sure to use yarn command
+      - run: rm package-lock.json
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
@@ -45,6 +50,11 @@ jobs:
         with:
           node-version: 8
           cache: 'yarn'
+
+      - run: yarn -v
+
+      # make sure to use yarn command
+      - run: rm package-lock.json
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
