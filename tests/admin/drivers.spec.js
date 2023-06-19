@@ -41,3 +41,7 @@ test('not admin cannot change driver data', async () => {
 
 	expect(error.status).toBe(401);
 });
+
+test('CI workflow', async () => {
+	expect(true).toBe(true);
+});
